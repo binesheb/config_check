@@ -1,5 +1,15 @@
 # Config Check — Surface Book 3
-Run:
-`irm https://raw.githubusercontent.com/binesheb/config_check/main/irm.ps1 | iex`
 
-This is a non-destructive used-laptop diagnostic for the Surface Book 3 configuration discussed: 15-inch, i7-1065G7, 32 GB, 1 TB SSD, GTX 1660 Ti 6 GB. It checks hardware identity, GPU, display, storage, batteries, Windows integrity, PnP errors and recent event logs, then produces a health score, price ceiling and purchase verdict. Physical inspection remains mandatory.
+Non-destructive Windows PowerShell 5.1 diagnostic for evaluating the used Surface Book 3.
+
+## Run
+
+PowerShell as Administrator:
+
+```powershell
+irm https://github.com/binesheb/config_check/raw/refs/heads/main/irm.ps1 | iex
+```
+
+The tool checks Surface Book 3 identity, CPU, RAM, NVIDIA GPU, display, SSD, battery health/cycles, battery report, Device Manager/PnP errors, NTFS, DISM, SFC and recent critical/error events. It generates reports on the Desktop and calculates a health score, price ceiling and purchase verdict.
+
+Physical checks remain mandatory for swelling, display lifting, touch, pixels, ports, hinge and detach/reattach.
